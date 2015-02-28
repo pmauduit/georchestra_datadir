@@ -9,13 +9,13 @@
 Ext.namespace("GEOR");
 
 GEOR.custom = {
-    
+
     /**
      * Constant: HEADER_HEIGHT
      * Integer value representing the header height, as set in the shared maven filters
      * Defaults to 90
      */
-    HEADER_HEIGHT: @shared.header.height@,
+    HEADER_HEIGHT: 90,
 
     /***** Beginning of config options which can be set in this file *****/
 
@@ -94,7 +94,7 @@ GEOR.custom = {
             "de": "Utensilienauswahl zur Kartenmarkierung mittels unterschiedlicher Formen"
         }
     }],
-    
+
     /**
      * Constant: GEOSERVER_WFS_URL
      * The URL to GeoServer WFS.
@@ -142,11 +142,7 @@ GEOR.custom = {
      */
     CATALOGS: [
         ['http://geobretagne.fr/geonetwork/srv/fre/csw', 'le catalogue GeoBretagne'],
-        ['http://ids.pigma.org/geonetwork/srv/fre/csw', 'le catalogue PIGMA'],
-        ['/geonetwork/srv/fre/csw', 'le catalogue local'],
-        ['http://sandre.eaufrance.fr/geonetwork_CSW/srv/fre/csw', 'le catalogue du Sandre'],
-        ['http://geocatalog.webservice-energy.org/geonetwork/srv/fre/csw', 'le catalogue de webservice-energy'],
-        ['http://www.ifremer.fr/geonetwork/srv/fre/csw', "le catalogue de l'Ifremer"]
+        ['/geonetwork/srv/fre/csw', 'le catalogue local']
     ],
 
     /**
@@ -165,7 +161,7 @@ GEOR.custom = {
      * Defaults to 20.
      */
     //MAX_CSW_RECORDS: 20,
-    
+
     /**
      * Constant: CSW_FILTER_PROPERTIES
      * A list of properties queried on catalog search.
@@ -217,7 +213,7 @@ GEOR.custom = {
      * Defaults to true
      */
     //OSM_AS_OVMAP: true,
-    
+
     /**
      * Constant: OVMAP_LAYER_NAME
      * The name of the base layer which will be displayed in the overview map.
@@ -632,37 +628,17 @@ GEOR.custom = {
      * {Array} List of externals WMS to display in the WMS servers tab.
      */
     WMS_SERVERS: [
+        {"name": "WMS local", "url": "/geoserver/wms"},
         {"name": "geOrchestra demo", "url": "http://sdi.georchestra.org/geoserver/wms"},
         {"name": "GeoBretagne", "url": "http://geobretagne.fr/geoserver/wms"},
-        {"name": "Sandre/zonages", "url": "http://services.sandre.eaufrance.fr/geo/zonage"},
-        {"name": "Sandre/ouvrages", "url": "http://services.sandre.eaufrance.fr/geo/ouvrage"},
-        {"name": "Sandre/stations", "url": "http://services.sandre.eaufrance.fr/geo/stations"},
-        {"name": "BRGM/géologie", "url": "http://geoservices.brgm.fr/geologie"},
-        {"name": "BRGM/risques", "url": "http://geoservices.brgm.fr/risques"},
-        {"name": "Cartorisque33, risques naturels", "url": "http://cartorisque.prim.net/wms/33"},
-        {"name": "Cartorisque24, risques naturels", "url": "http://cartorisque.prim.net/wms/24"},
-        {"name": "Cartorisque47, risques naturels", "url": "http://cartorisque.prim.net/wms/47"},
-        {"name": "Cartorisque40, risques naturels", "url": "http://cartorisque.prim.net/wms/40"},
-        {"name": "Cartorisque64, risques naturels", "url": "http://cartorisque.prim.net/wms/64"},
-        {"name": "Carmen", "url": "http://ws.carmen.application.developpement-durable.gouv.fr/WFS/10/Nature_Paysage"},
-        {"name": "GeoSignal", "url": "http://www.geosignal.org/cgi-bin/wmsmap"},
-        {"name": "Corine Land Cover", "url": "http://sd1878-2.sivit.org/geoserver/wms"},
-        {"name": "GeoLittoral", "url": "http://geolittoral.application.equipement.gouv.fr/wms/metropole"},
-        {"name": "Gest'Eau", "url": "http://gesteau.oieau.fr/service"},
-        {"name": "IFREMER/Océanographie physique", "url": "http://www.ifremer.fr/services/wms/oceanographie_physique"},
-        {"name": "IFREMER/Biologie", "url": "http://www.ifremer.fr/services/wms/biologie"},
-        {"name": "IFREMER/GeoSciences", "url": "http://www.ifremer.fr/services/wms/geosciences"},
-        {"name": "IFREMER/Photos anciennes", "url": "http://www.ifremer.fr/services/photos_anciennes"},
-        {"name": "IFREMER/Nouvelle Calédonie", "url": "http://www.ifremer.fr/services/wms/nc"},
-        {"name": "IFREMER/Euroshell (conchyliculture, aquaculture...)", "url": "http://www.ifremer.fr/services/wms/euroshell"},
-        {"name": "Cartelie/CETE Ouest", "url": "http://mapserveur.application.developpement-durable.gouv.fr/map/mapserv?map%3D%2Fopt%2Fdata%2Fcarto%2Fcartelie%2Fprod%2FCETE_Ouest%2Fxdtyr36laj.www.map"}
-    ],
-    
+        ],
+
     /**
      * Constant: WFS_SERVERS
      * {Array} List of externals WFS to display in the WFS servers tab.
      */
     WFS_SERVERS: [
+        {"name": "WFS local", "url": "/geoserver/wfs"},
         {"name": "geOrchestra demo", "url": "http://sdi.georchestra.org/geoserver/wfs"},
         {"name": "GeoBretagne", "url": "http://geobretagne.fr/geoserver/wfs"},
         {"name": "Corine Land Cover", "url": "http://sd1878-2.sivit.org/geoserver/wfs"}
