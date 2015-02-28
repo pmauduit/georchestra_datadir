@@ -1,0 +1,436 @@
+<?xml version="1.0"?>
+<ViewContext xmlns="http://www.opengis.net/context" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" id="OSM" xsi:schemaLocation="http://www.opengis.net/context http://schemas.opengis.net/context/1.1.0/context.xsd">
+  <General>
+    <Window width="973" height="686"/>
+    <BoundingBox minx="252467.716913840006" miny="6208522.95685259998" maxx="661127.496237559943" maxy="6496642.80126779992" SRS="EPSG:2154"/>
+    <Title/>
+    <Extension>
+      <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+    </Extension>
+  </General>
+  <LayerList>
+    <Layer queryable="0" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/gwc/service/wms"/>
+      </Server>
+      <Name>Fond_GIP</Name>
+      <Title>Fond GIP</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geonetwork/srv/fr/metadata.show?uuid=d870e518-3992-42c8-855e-9d49c1c764f9"/>
+      </MetadataURL>
+      <FormatList>
+        <Format>image/jpeg</Format>
+        <Format current="1">image/png</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name/>
+          <Title>Default</Title>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="256" height="256"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="0" hidden="0">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/gwc/service/wms"/>
+      </Server>
+      <Name>osm:osm_bing</Name>
+      <Title>OpenStreetMap style bing</Title>
+      <FormatList>
+        <Format current="1">image/png</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name/>
+          <Title>Default</Title>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="256" height="256"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="0" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/gwc/service/wms"/>
+      </Server>
+      <Name>ign_r:Scan25</Name>
+      <Title>IGN - Scan 25</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geonetwork/srv/fr/metadata.show?uuid=538560c2-be91-469c-a2b3-9ef0891560f8"/>
+      </MetadataURL>
+      <FormatList>
+        <Format>image/jpeg</Format>
+        <Format current="1">image/png</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name/>
+          <Title>Default</Title>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="256" height="256"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:opacity xmlns:ol="http://openlayers.org/context">0.45</ol:opacity>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="0" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/gwc/service/wms"/>
+      </Server>
+      <Name>ign_r:ign_ortho50cm_DCM_2012_Aquitaine</Name>
+      <Title>Vue A&#xE9;rienne 2012 50cm</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://ids.pigma.org/geonetwork/apps/georchestra/?uuid=c06a250e-e334-442c-961c-39eb5b77b04a"/>
+      </MetadataURL>
+      <FormatList>
+        <Format current="1">image/jpeg</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name/>
+          <Title>Default</Title>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="256" height="256"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="0" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/gwc/service/wms"/>
+      </Server>
+      <Name>ign_r:ign_ortho40cm_2009_Aquitaine</Name>
+      <Title>Vue A&#xE9;rienne 2009 40cm</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geonetwork/srv/fr/metadata.show?uuid=74b56c94-c442-4999-91a2-298e561f69b6"/>
+      </MetadataURL>
+      <FormatList>
+        <Format current="1">image/jpeg</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name/>
+          <Title>Default</Title>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="256" height="256"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="0" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/gwc/service/wms"/>
+      </Server>
+      <Name>ign_r:ign_ortho50cm_2004_2008_aquitaine</Name>
+      <Title>Vue A&#xE9;rienne 2004 - 2008 50cm</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geonetwork/srv/fr/metadata.show?uuid=af7bd513-5e42-4f32-88ff-e7d15bb4a18a"/>
+      </MetadataURL>
+      <FormatList>
+        <Format current="1">image/jpeg</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name/>
+          <Title>Default</Title>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="256" height="256"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="0" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://wms.cartogip.fr/wms_pigma/bdparcellaire_image/"/>
+      </Server>
+      <Name>IGN - Cadastre (Bdparcellaire image)</Name>
+      <Title>IGN - Cadastre (Bdparcellaire image)</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geonetwork/srv/fr/metadata.show?uuid=f42a220b-f1d0-41ba-b9ef-5bf92c9e07a7"/>
+      </MetadataURL>
+      <FormatList>
+        <Format>image/jpeg</Format>
+        <Format>image/jpeg</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name/>
+          <Title>Default</Title>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="256" height="256"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="1" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://wms.cartogip.fr/wms_pigma/bdparcellaire/"/>
+      </Server>
+      <Name>IGN - Cadastre (Bdparcellaire vecteur)</Name>
+      <Title>IGN - Cadastre (Bdparcellaire vecteur)</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geonetwork/srv/fr/metadata.show?uuid=6140eb6d-69a3-49a1-bf15-7f445675db04"/>
+      </MetadataURL>
+      <FormatList>
+        <Format current="1">image/png</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+        <Format>image/png; mode=8bit</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name/>
+          <Title>Default</Title>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="256" height="256"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="0" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/gcis_nom_voies/wms?SERVICE=WMS&amp;"/>
+      </Server>
+      <Name>gcis_nom_voies:gcis_nomvoiesbdadresse</Name>
+      <Title>IGN - Nom voies BD Adresse</Title>
+      <FormatList>
+        <Format current="1">image/png</Format>
+        <Format>application/atom xml</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/openlayers</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss xml</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml</Format>
+        <Format>application/vnd.google-earth.kml xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>application/vnd.google-earth.kmz xml</Format>
+        <Format>application/vnd.google-earth.kmz+xml</Format>
+        <Format>atom</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/gif;subtype=animated</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg</Format>
+        <Format>image/svg xml</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>kml</Format>
+        <Format>kmz</Format>
+        <Format>openlayers</Format>
+        <Format>rss</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name/>
+          <Title>Default</Title>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="512" height="512"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="1" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/ign/wms"/>
+      </Server>
+      <Name>ign:ign_bdtopo_commune</Name>
+      <Title>IGN BD TOPO - Communes</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geonetwork/srv/fr/metadata.show?uuid=98224a94-cd56-4f07-8942-1d47ee38d447"/>
+      </MetadataURL>
+      <FormatList>
+        <Format current="1">image/png</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name>bdtopo:commune</Name>
+          <Title/>
+          <LegendURL width="20" height="20" format="image/png">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/ign/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ign_bdtopo_commune"/>
+          </LegendURL>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="512" height="512"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="1" hidden="1">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/wms?SERVICE=WMS&amp;"/>
+      </Server>
+      <Name>craquitaine:zonage_epci_region_bdtopo</Name>
+      <Title>CR Aquitaine - Zonage EPCI</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geonetwork/srv/fr/metadata.show?uuid=207877dc-d867-4932-92e2-0f5737945951"/>
+      </MetadataURL>
+      <FormatList>
+        <Format current="1">image/png</Format>
+        <Format>application/atom xml</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/openlayers</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss xml</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml</Format>
+        <Format>application/vnd.google-earth.kml xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>application/vnd.google-earth.kmz xml</Format>
+        <Format>application/vnd.google-earth.kmz+xml</Format>
+        <Format>atom</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/gif;subtype=animated</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg</Format>
+        <Format>image/svg xml</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>kml</Format>
+        <Format>kmz</Format>
+        <Format>openlayers</Format>
+        <Format>rss</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name>zonage_epci_region_bdtopo</Name>
+          <Title>AtlasStyler v1.8-r201201181721, Export-Mode: PRODUCTION</Title>
+          <LegendURL width="20" height="20" format="image/png">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=dgcl_banatic_epci"/>
+          </LegendURL>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="512" height="512"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+    <Layer queryable="1" hidden="0">
+      <Server service="OGC:WMS" version="1.1.1">
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/ign/wms"/>
+      </Server>
+      <Name>ign:ign_bdtopo_departement</Name>
+      <Title>IGN BD TOPO - D&#xE9;partements</Title>
+      <MetadataURL>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geonetwork/srv/fr/metadata.show?uuid=98224a94-cd56-4f07-8942-1d47ee38d447"/>
+      </MetadataURL>
+      <FormatList>
+        <Format current="1">image/png</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name>ligne_pleine_rouge</Name>
+          <Title/>
+          <LegendURL width="20" height="20" format="image/png">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ids.pigma.org/geoserver/ign/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ign_bdtopo_departement"/>
+          </LegendURL>
+        </Style>
+      </StyleList>
+      <Extension>
+        <ol:maxExtent xmlns:ol="http://openlayers.org/context" minx="-357823.236499999999" miny="6037008.69390000030" maxx="1313632.36280000000" maxy="7230727.37719999999"/>
+        <ol:tileSize xmlns:ol="http://openlayers.org/context" width="512" height="512"/>
+        <ol:transparent xmlns:ol="http://openlayers.org/context">true</ol:transparent>
+        <ol:numZoomLevels xmlns:ol="http://openlayers.org/context">15</ol:numZoomLevels>
+        <ol:units xmlns:ol="http://openlayers.org/context">m</ol:units>
+        <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">false</ol:isBaseLayer>
+        <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+        <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+      </Extension>
+    </Layer>
+  </LayerList>
+</ViewContext>
