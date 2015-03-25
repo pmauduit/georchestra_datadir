@@ -1,68 +1,9 @@
-/**
- * Sample geOrchestra viewer config file
- *
- * Instructions: copy this buffer into GEOR_custom.js,
- * uncomment lines you wish to modify and 
- * modify the corresponding values to suit your needs.
- */
-
 Ext.namespace("GEOR");
 
 GEOR.custom = {
 
-    /**
-     * Constant: HEADER_HEIGHT
-     * Integer value representing the header height, as set in the shared maven filters
-     * Defaults to 90
-     */
     HEADER_HEIGHT: 90,
 
-    /***** Beginning of config options which can be set in this file *****/
-
-    /**
-     * Constant: CONTEXTS
-     * {Array} the array of arrays describing the available contexts
-     *
-     * Each "context array" consists of 4 mandatory fields:
-     *   * the first field is the label which appears in the UI
-     *   * the second one is the path to the thumbnail
-     *   * the third one is the path to the context (WMC) file
-     *   * the last one is a comment which will be shown on thumbnail hovering
-     *
-     * Example config : 
-     *   [
-     *      ["OpenStreetMap", "app/img/contexts/osm.png", "default.wmc", "A unique OSM layer"],
-     *      ["Orthophoto", "app/img/contexts/ortho.png", "contexts/ortho.wmc", "Orthophoto 2009"],
-     *      ["Forêts", "app/img/contexts/forets.png", "contexts/forets.wmc", "Les 3 couches forêts sur fond OSM"]
-     *   ]
-     *
-     * Defaults to ["OpenStreetMap", "app/img/contexts/osm.png", "default.wmc", "A unique OSM layer"]
-     * Should *not* be empty !
-     *
-    CONTEXTS: [
-        ["OpenStreetMap", "app/img/contexts/osm.png", "default.wmc", "A unique OSM layer"]
-    ],*/
-
-    /**
-     * Constant: ADDONS
-     * An array of addons config objects.
-     * Defaults to []
-     * 
-     * An "addon config object" is an object with the following properties:
-     *  id - {String} required identifier, which *MUST* :
-     *        * be stable across deployments in order to let your users recover their tools
-     *        * be unique in the ADDONS array
-     *  name - {String} required addon name, which, once lowercased, gives the addon folder name
-     *  title - {Object} a required hash storing addon titles by lang key
-     *  description - {Object} a required hash storing addon descriptions by lang key
-     *  roles - {Array} optional array of roles allowed to use this addon - defaults to [], which means everyone is allowed to.
-     *          eg: ["ROLE_SV_ADMIN"] will allow the current addon for admin users only
-     *  group - {String} an optional group for mutual exclusion between activated tools - default group is "tools"
-     *  options - {Object} an optional config object which overrides the package default_options (in manifest.json)
-     *  thumbnail - {String} an optional thumbnail path, relative to app/addons/{addon_name.toLowerCase()}/ (defaults to img/thumbnail.png)
-     *  preloaded - {boolean} if true then the addon is loaded by default on mapfishapp load only if the user has not saved his addon list preferences (checkbox)
-     *  
-     */
     ADDONS: [{
         "id": "magnifier_0", // unique & stable string identifier for this addon instance
         "name": "Magnifier",
@@ -95,52 +36,13 @@ GEOR.custom = {
         }
     }],
 
-    /**
-     * Constant: GEOSERVER_WFS_URL
-     * The URL to GeoServer WFS.
-     * This is required if and only if the "referentials" module is activated.
-     * Defaults to /geoserver/wfs
-     */
     GEOSERVER_WFS_URL: "http://geobretagne.fr/geoserver/wfs",
 
-    /**
-     * Constant: GEOSERVER_WMS_URL
-     * The URL to the GeoServer WMS. 
-     * This is required if and only if OSM_AS_OVMAP is set to false.
-     * Defaults to /geoserver/wms
-     */
-    //GEOSERVER_WMS_URL: "/geoserver/wms",
 
-    /**
-     * Constant: GEONETWORK_BASE_URL
-     * The base URL to the local GeoNetwork server.
-     * Required for CSW Browser module.
-     * Defaults to "/geonetwork"
-     */
     GEONETWORK_BASE_URL: "/geonetwork",
 
-    /**
-     * Constant: CSW_GETDOMAIN_SORTING
-     * true to case insensitive sort (client side) the keywords 
-     * got from a CSW getDomain request. false to disable 
-     * client side sorting 
-     * (which is preferable in case of too many keywords).
-     * Defaults to false
-     */
-    //CSW_GETDOMAIN_SORTING: false,
-
-    /**
-     * Constant: THESAURUS_NAME
-     * Thesaurus name to display for the CSW GetDomain request.
-     * Defaults to 'mots clés'
-     */
-    //THESAURUS_NAME: 'mots clés',
-
-    /**
-     * Constant: CATALOGS
-     * List of catalogs for freetext search
-     */
     CATALOGS: [
+        ['http://debian-7-x64.camptocamp.com/geonetwork/srv/fre/csw', 'Catalogue local'],
         ['http://geobretagne.fr/geonetwork/srv/fre/csw', 'le catalogue GeoBretagne'],
         ['/geonetwork/srv/fre/csw', 'le catalogue local']
     ],
@@ -575,7 +477,7 @@ GEOR.custom = {
      * {RegExp} 
      * PLatform layers only with this config
      */
-    EDITABLE_LAYERS: /.*@shared.server.name@.*/i,
+    EDITABLE_LAYERS: /.*debian-7-x64.camptocamp.com.*/i,
 
     /**
      * Constant: FORCE_LOGIN_IN_TOOLBAR
