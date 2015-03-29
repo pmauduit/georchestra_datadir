@@ -24,7 +24,7 @@
 <log4j:configuration debug="false" xmlns:log4j="http://jakarta.apache.org/log4j/">
 
     <appender name="cas" class="org.apache.log4j.DailyRollingFileAppender">
-       <param name="File" value="/home/pmauduit/projects/georchestra/tomcats/logs/cas-server-webapp.log" />
+       <param name="File" value="/var/log/georchestra/cas-server-webapp.log" />
        <param name="DatePattern" value="'.'yyyy-MM-dd" />
        <layout class="org.apache.log4j.PatternLayout">
           <param name="ConversionPattern" value="[%p] %d %c %M - %m%n"/>          
