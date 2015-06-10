@@ -9,13 +9,13 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
           xmlns:ctx="http://www.springframework.org/schema/context"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns="http://www.springframework.org/schema/beans">
-    
+
 	<!-- Override passthrough filter -->
 	<bean id="preAuthenticationFilter" class="org.springframework.security.web.authentication.preauth.RequestHeaderAuthenticationFilter">
 		<property name="authenticationManager" ref="authenticationManager"/>
 		<property name="checkForPrincipalChanges" value="true"/>
 		<property name="exceptionIfHeaderMissing" value="false"/>
-		<property name="principalRequestHeader" value="sec-username"></property>
+                <property name="principalRequestHeader" value="sec-username" />
 	</bean>
 	<bean class="org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationProvider" id="preFilterAuthenticationProvider">
     	<property name="preAuthenticatedUserDetailsService">
@@ -34,5 +34,37 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
         <constructor-arg index="1" value="${ldap.base.dn.pattern}"/>
         <constructor-arg index="2" ref="contextSource" />
     </bean>
-    
+
+    <bean id="ldapUserContextMapper" class="org.fao.geonet.kernel.security.ldap.LDAPUserDetailsContextMapperWithProfileSearch">
+      <property name="mapping">
+        <map/>
+      </property>
+      <property name="profileMapping">
+        <map>
+          <entry key="ADMIN"     value="Administrator" />
+          <entry key="REVIEWER"  value="Reviewer" />
+          <entry key="EDITOR"    value="Editor" />
+          <entry key="USER"      value="RegisteredUser" />
+          <entry key="ANONYMOUS" value="Guest" />
+        </map>
+      </property>
+      <property name="importPrivilegesFromLdap" value="${ldap.privilege.import}"/>
+      <property name="createNonExistingLdapGroup" value="${ldap.privilege.create.nonexisting.groups}" />
+      <property name="createNonExistingLdapUser" value="${ldap.privilege.create.nonexisting.users}" />
+
+      <property name="ldapManager" ref="ldapUserDetailsService" />
+
+      <property name="groupAttribute" value="${ldap.privilege.search.group.attribute}"/>
+      <property name="groupObject" value="${ldap.privilege.search.group.object}"/>
+      <property name="groupQuery" value="${ldap.privilege.search.group.query}"/>
+      <property name="groupQueryPattern" value="${ldap.privilege.search.group.pattern}"/>
+
+      <property name="privilegeAttribute" value="${ldap.privilege.search.privilege.attribute}"/>
+      <property name="privilegeObject" value="${ldap.privilege.search.privilege.object}"/>
+      <property name="privilegeQuery" value="${ldap.privilege.search.privilege.query}"/>
+      <property name="privilegeQueryPattern" value="${ldap.privilege.search.privilege.pattern}"/>
+
+      <property name="contextSource" ref="contextSource" />
+    </bean>
+
 </beans>
